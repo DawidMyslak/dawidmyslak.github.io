@@ -79,7 +79,7 @@ body {
     font-size: 32px;
     font-weight: bold;
     color: #fff;
-    text-shadow: 0 0 2px rgba(16, 38, 65, 0.5);
+    text-shadow: 1px 1px 0 rgba(16, 38, 65, 0.25);
 }
 
 .title {
