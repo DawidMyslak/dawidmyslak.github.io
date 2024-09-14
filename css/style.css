@@ -1,167 +1,174 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-html, body {
-    width: 100%;
-    height: 100%;
+html,
+body {
+  width: 100%;
+  height: 100%;
 }
 
 body {
-    margin: 0;
-    font-family: 'Open Sans', sans-serif;
-    background: url(../images/background.jpg) no-repeat center center fixed;
-    background-size: cover;
-    overflow: hidden;
-    user-select: none;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background: url(../images/background.jpg) no-repeat center center fixed;
+  background-size: cover;
+  overflow: hidden;
+  user-select: none;
 }
 
 .wrapper,
 .animations {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .animations {
-    position: absolute;
-    overflow: hidden;
+  position: absolute;
+  overflow: hidden;
 }
 
 .loader {
-    width: 100px;
-    height: 100px;
-    padding: 10px;
-    border-radius: 50%;
-    background-color: #fff;
-    box-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
-    animation: increase-loader 0.75s ease-in 2s forwards;
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
+  animation: increase-loader 0.75s ease-in 2s forwards;
 }
 
 .spinner {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    background-color: #fff;
-    border-top: 5px solid rgb(62, 109, 163);
-    border-right: 5px solid #fff;
-    border-left: 5px solid #fff;
-    border-bottom: 5px solid rgb(93, 146, 211);
-    animation: rotate-spinner 2s ease 0s forwards;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #fff;
+  border-top: 5px solid rgb(62, 109, 163);
+  border-right: 5px solid #fff;
+  border-left: 5px solid #fff;
+  border-bottom: 5px solid rgb(93, 146, 211);
+  animation: rotate-spinner 2s ease 0s forwards;
 }
 
 .content {
-    width: 340px;
-    padding: 40px;
-    opacity: 0;
-    animation: show-content 0.25s ease-out 2.25s forwards;
+  width: 340px;
+  padding: 40px;
+  opacity: 0;
+  animation: show-content 0.25s ease-out 2.25s forwards;
 }
 
 .top {
-    text-align: center;
-    padding-bottom: 24px;
-    margin-bottom: 20px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  text-align: center;
+  padding-bottom: 24px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
 }
 
 .photo {
-    width: 100px;
-    height: 100px;
-    background: url(../images/avatar.png) no-repeat;
-    background-size: 100% 100%;
-    border-radius: 50%;
-    display: inline-block;
+  width: 100px;
+  height: 100px;
+  background: url(../images/avatar.png) no-repeat;
+  background-size: 100% 100%;
+  margin-bottom: 4px;
+  border-radius: 50%;
+  display: inline-block;
 }
 
 .name {
-    font-size: 32px;
-    font-weight: bold;
-    color: #fff;
-    text-shadow: 1px 1px 0 rgba(16, 38, 65, 0.25);
+  font-size: 32px;
+  color: #fff;
+  text-shadow: 1px 1px 0 rgba(16, 38, 65, 0.25);
 }
 
 .title {
-    font-size: 16px;
-    color: rgba(16, 38, 65, 0.75);
+  font-size: 16px;
+  color: rgba(16, 38, 65, 0.75);
 }
 
 .links {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .links ul {
-    display: inline-flex;
-    list-style-type: none;
-    padding: 0;
-    margin: 16px;
+  display: inline-flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 16px;
 }
 
 .links li {
-    margin: 0 16px;
+  margin: 0 16px;
 }
 
 .links li a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 44px;
-    height: 44px;
-    font-size: 20px;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 50%;
-    background: linear-gradient(rgba(26, 67, 114, 0.5), rgba(26, 67, 114, 0.8));
-    transition: transform 0.25s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 50%;
+  background: linear-gradient(rgba(26, 67, 114, 0.5), rgba(26, 67, 114, 0.8));
+  transition: transform 0.25s ease;
+}
+
+.links li svg {
+  width: 24px;
+  height: 24px;
+  fill: #fff;
 }
 
 .links li a:hover {
-    background-color: rgba(26, 67, 114, 0.8);
-    transform: scale(1.1);
+  background-color: rgba(26, 67, 114, 0.8);
+  transform: scale(1.1);
 }
-
 
 /* animations */
 
 @keyframes rotate-spinner {
-    0% {
-        opacity: 1;
-        transform: rotate(0deg);
-    }
-    50% {
-        opacity: 1;
-        transform: rotate(360deg);
-    }
-    100% {
-        opacity: 0;
-        transform: rotate(720deg);
-    }
+  0% {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+  50% {
+    opacity: 1;
+    transform: rotate(360deg);
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(720deg);
+  }
 }
 
 @keyframes increase-loader {
-    0% {
-        opacity: 1;
-        transform: scale(1);
-    }
-    50% {
-        opacity: 1;
-        transform: scale(28);
-    }
-    100% {
-        opacity: 0;
-        transform: scale(28);
-    }
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(28);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(28);
+  }
 }
 
 @keyframes show-content {
-    0% {
-        opacity: 0;
-        transform: scale(2);
-    }
-    100% {
-        opacity: 1;
-        transform: scale(1);
-    }
+  0% {
+    opacity: 0;
+    transform: scale(2);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
