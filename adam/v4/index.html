@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Gra Adasia 😊🍎</title>
+    <meta charset="utf-8" />
+    <style>
+      .stats {
+        position: absolute;
+        color: black;
+        padding: 8px;
+        font-family: comic sans ms;
+      }
+
+      #game {
+        background-color: #32a852;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="stats">Zebrane jabłka: <span id="score"></span></div>
+
+    <canvas id="game"></canvas>
+
+    <!-- load framework -->
+    <script src="game-engine.js"></script>
+
+    <!-- load game -->
+    <script src="game.js"></script>
+  </body>
+</html>
