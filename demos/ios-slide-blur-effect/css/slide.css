@@ -1,0 +1,78 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300);	
+
+html, body {
+  background: #fff;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans';
+  font-weight: 300;
+}
+
+#case {
+  width: 270px;
+  height: 480px;
+  margin: 20px auto 0 auto;
+  padding: 50px 10px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+}
+
+#background {
+  width: 310px;
+  height: 520px;
+  position: absolute;
+  background: url(../images/bg.png);
+  margin: -20px 0 0 -20px;
+}
+
+#slider {
+  width: 270px;
+  height: 480px;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+#slider ul {
+  width: 540px;
+  height: 480px;
+  position: relative;
+  margin: 0 0 0 -270px;
+  padding: 0;
+  list-style: none;
+}
+
+#slider ul li {
+  width: 270px;
+  height: 480px;
+  position: relative;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.clock {
+  margin: 60px auto 0 auto;
+  font-size: 60px;
+  display: block;
+}
+
+.date {
+  margin: 10px auto 0 auto;
+  font-size: 20px;
+  display: block;
+}
+
+.button {
+  width: 100px;
+  margin: 200px auto 0 auto;
+  padding: 10px;
+  font-size: 20px;
+  color: #fff;
+  display: block;
+  text-decoration: none;
+  border: 1px solid #fff;
+  border-radius: 10px;
+}
