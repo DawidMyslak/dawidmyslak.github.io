@@ -103,6 +103,9 @@ body {
 
 .links li {
   margin: 0 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .links li a {
@@ -117,12 +120,21 @@ body {
   border-radius: 50%;
   background: linear-gradient(rgba(26, 67, 114, 0.5), rgba(26, 67, 114, 0.8));
   transition: transform 0.25s ease;
+  margin-bottom: 6px;
 }
 
 .links li svg {
   width: 24px;
   height: 24px;
   fill: #fff;
+}
+
+.icon-label {
+  font-size: 11px;
+  color: #fff;
+  text-shadow: 1px 1px 0 rgba(16, 38, 65, 0.25);
+  white-space: nowrap;
+  text-align: center;
 }
 
 .links li a:hover {
