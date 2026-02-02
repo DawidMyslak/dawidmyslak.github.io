@@ -355,7 +355,7 @@ body {
 
 .photo-rings {
   position: absolute;
-  inset: -20px;
+  inset: -15px;
 }
 
 .ring {
@@ -392,13 +392,13 @@ body {
 }
 
 .photo {
-  width: 110px;
-  height: 110px;
+  width: 85px;
+  height: 85px;
   background: url(../images/avatar.png) no-repeat center center;
   background-size: cover;
   border-radius: 50%;
   position: relative;
-  border: 3px solid var(--primary);
+  border: 2px solid var(--primary);
   box-shadow: var(--glow-primary);
   overflow: hidden;
 }
@@ -822,9 +822,8 @@ body {
   }
 
   .photo {
-    width: 85px;
-    height: 85px;
-    border-width: 2px;
+    width: 75px;
+    height: 75px;
   }
 
   .photo-rings {
@@ -933,8 +932,8 @@ body {
   }
 
   .photo {
-    width: 75px;
-    height: 75px;
+    width: 65px;
+    height: 65px;
   }
 
   .photo-container {
@@ -997,8 +996,8 @@ body {
   }
 
   .photo {
-    width: 65px;
-    height: 65px;
+    width: 55px;
+    height: 55px;
   }
 
   .links li a {
@@ -1029,8 +1028,8 @@ body {
   }
 
   .photo {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
   }
 
   .photo-rings {
@@ -1068,8 +1067,8 @@ body {
 /* Short screens */
 @media screen and (max-height: 700px) and (orientation: portrait) {
   .photo {
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
   }
 
   .photo-container {
@@ -1092,8 +1091,8 @@ body {
   }
 
   .photo {
-    width: 130px;
-    height: 130px;
+    width: 95px;
+    height: 95px;
   }
 
   .links li a {
