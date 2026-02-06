@@ -96,10 +96,15 @@
             <ul>
               <li style="--i: 0" data-tooltip="Send Message">
                 <a
-                  href="mailto:dawid.myslak+website@gmail.com"
-                  target="_blank"
+                  href="#contact"
+                  data-a="dawid"
+                  data-b="myslak"
+                  data-c="website"
+                  data-d="gmail"
+                  data-e="com"
                   rel="noopener"
                   aria-label="Send email"
+                  onclick="this.href='mai'+'lto'+':'+this.dataset.a+'.'+this.dataset.b+'+'+this.dataset.c+'@'+this.dataset.d+'.'+this.dataset.e;return true;"
                 >
                   <div class="icon-bg"></div>
                   <svg
